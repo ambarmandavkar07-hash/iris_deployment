@@ -21,6 +21,7 @@ petal_width = st.number_input("Petal Length",min_value=0.1, max_value=3.0)
 if st,button("Predict"):
     prediction = model.predict([[sepal_length, sepal_width, petal_length ,petal_width]])
     classes = ["Setosa", "Versicolor", "Virginica"]
-    st.write(f"Prediction" {classes[prediction[0]]}")
+    st.write(f"Prediction" {classes[prediction[0]]})
+
 
 
